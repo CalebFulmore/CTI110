@@ -1,12 +1,25 @@
-#get values
-color1 = int(input())
-color2 = int(input())
-color3 = int(input())
+#get color values
+c1 = int(input())
+c2 = int(input())
+c3 = int(input())
+smallest = 0
 
-colorlist = (color1, color2, color3)
+#find smallest value
+if c1 <= c2 :
+    if c1 <= c3 :
+        smallest = c1
+        
+if c2 <= c1:
+    if c2 <= c3:
+        smallest = c2
 
-#find minimum value
-minvalue = min(colorlist)
+if c3 <= c2 :
+    if c3 <= c1 :
+        smallest = c3
 
-#display each value minum the mininum
-print(color1 - minvalue, color2- minvalue, color3 - minvalue)
+#subtract smallest value from three numbers
+print(c1 - smallest, c2 - smallest, c3 - smallest)
+
+        
+
+
